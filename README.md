@@ -23,4 +23,11 @@ For more information about the game [ghost on wikipedia](http://en.wikipedia.org
 * Xghost
 * Spook
 
-![tiny arrow](https://github.com/gitjoop/MrPotatoHead/blob/master/app/src/main/res/mipmap-hdpi/ic_launcher.png "tiny arrow")
+##See the mockup
+Here you will be abled to see my mockup http://invis.io/HE2OM88B4
+You can see my comments, and already use it like it's a real app by clicking on buttons. Even swiping should work on a mobile device.
+
+Not all buttons are yet implemented and thanks to the mockup I realised I am missing some basic stuff (the ones I released can be seen in the comments).
+I will be updating this file throughout the upcoming days to create a better UI.
+
+
