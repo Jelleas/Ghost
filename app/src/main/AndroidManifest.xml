@@ -24,6 +24,42 @@
             android:name=".FeedbackActivity"
             android:label="@string/title_activity_feedback" >
         </activity>
+        <activity
+            android:name=".RulesActivity"
+            android:label="@string/title_activity_rules" >
+        </activity>
+        <activity
+            android:name=".PremiumActivity"
+            android:label="@string/title_activity_premium" >
+        </activity>
+        <activity
+            android:name=".ShareActivity"
+            android:label="@string/title_activity_share" >
+        </activity>
+        <activity
+            android:name=".UserSettingsActivity"
+            android:label="@string/title_activity_user_settings" >
+        </activity>
+        <activity
+            android:name=".GameIntroductionActivity"
+            android:label="@string/title_activity_game_introduction" >
+        </activity>
+        <activity
+            android:name=".AccountCreationActivity"
+            android:label="@string/title_activity_account_creation" >
+        </activity>
+        <activity
+            android:name=".GameActivity"
+            android:label="@string/title_activity_game" >
+        </activity>
+        <activity
+            android:name=".GamesHomeScreenActivity"
+            android:label="@string/title_activity_games_home_screen" >
+        </activity>
+        <activity
+            android:name=".GameCreationActivity"
+            android:label="@string/title_activity_game_creation" >
+        </activity>
     </application>
 
 </manifest>
