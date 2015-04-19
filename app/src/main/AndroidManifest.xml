@@ -52,6 +52,34 @@
             android:name=".IntroductionGhostActivity"
             android:label="@string/title_activity_introduction_ghost" >
         </activity>
+        <activity
+            android:name=".AchievementsActivity"
+            android:label="@string/title_activity_achievements" >
+        </activity>
+        <activity
+            android:name=".UserSettingsActivity"
+            android:label="@string/title_activity_user_settings" >
+        </activity>
+        <activity
+            android:name=".PremiumActivity"
+            android:label="@string/title_activity_premium" >
+        </activity>
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="@string/title_activity_feedback" >
+        </activity>
+        <activity
+            android:name=".GameSettingsActivity"
+            android:label="@string/title_activity_game_settings" >
+        </activity>
+        <activity
+            android:name=".ShareActivity"
+            android:label="@string/title_activity_share" >
+        </activity>
+        <activity
+            android:name=".SettingsUserActivity"
+            android:label="@string/title_activity_settings_user" >
+        </activity>
     </application>
 
 </manifest>
