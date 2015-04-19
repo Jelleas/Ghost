@@ -16,6 +16,42 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".IntroductionScreen"
+            android:label="@string/title_activity_introduction_screen" >
+        </activity>
+        <activity
+            android:name=".CreateGhost"
+            android:label="@string/title_activity_create_ghost" >
+        </activity>
+        <activity
+            android:name=".GameIntroduction"
+            android:label="@string/title_activity_game_introduction" >
+        </activity>
+        <activity
+            android:name=".GhostIntroduction"
+            android:label="@string/title_activity_ghost_introduction" >
+        </activity>
+        <activity
+            android:name=".GameIntroductionActivity"
+            android:label="@string/title_activity_game_introduction" >
+        </activity>
+        <activity
+            android:name=".GhostIntroductionActivity"
+            android:label="@string/title_activity_ghost_introduction" >
+        </activity>
+        <activity
+            android:name=".RulesActivity"
+            android:label="@string/title_activity_rules" >
+        </activity>
+        <activity
+            android:name=".IntroductionGameActivity"
+            android:label="@string/title_activity_introduction_game" >
+        </activity>
+        <activity
+            android:name=".IntroductionGhostActivity"
+            android:label="@string/title_activity_introduction_ghost" >
+        </activity>
     </application>
 
 </manifest>
