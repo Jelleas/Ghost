@@ -7,13 +7,14 @@ public class RadixTreeNode {
     RadixTreeNode[] children;
 
     public RadixTreeNode() {
-
     }
 
     public void getChildren() {
 
     }
 
-
+    public boolean isWordPossible(String word) {
+        return false; //TODO
+    }
 
 }

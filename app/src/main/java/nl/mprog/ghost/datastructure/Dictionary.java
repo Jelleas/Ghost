@@ -1,19 +1,25 @@
 package nl.mprog.ghost.datastructure;
 
+import nl.mprog.ghost.enumeration.Language;
+
 /**
  * Created by Joop Pascha on 19-4-2015.
  */
 public class Dictionary {
-    int validRemainingWordCount;
-    RadixTree radixTree = new RadixTree();
+    RadixTree radixTree;
+    Language language;
 
-    //TODO ask why does it take in words and not a stringBuffer?
-    public Dictionary(String words) {
-
+    public Dictionary(Language language) {
+        this.language = language;
+        radixTree = new RadixTree(language);
     }
 
-    public String[] filter(String input) {
-        return new String[0];
+    public boolean isWord(String string) {
+        return false;
+    }
+
+    public void guess(String string) {
+        radixTree.updateNode(string);
     }
 
     public void count() {
@@ -21,10 +27,6 @@ public class Dictionary {
     }
 
     public void result() {
-
-    }
-
-    public void reset() {
 
     }
 
