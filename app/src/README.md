@@ -23,6 +23,7 @@ These games will be playable:
 These will be the possible settings
 
 Game settings
+
 * set number of players (default 2)
 + set computer/human (default computer)
 + set how many of those are computers (default 0)
@@ -30,15 +31,18 @@ Game settings
 + set game mode (ghost normal)
 
 Advanced settings which include 
-+ set minimum word length (default 3)
+
+* set minimum word length (default 3)
 
 User settings
+
 * Customize ghost color and look by wearables
-* Change name   
++ Change name   
 
 Ways to monetize the app
+
 * add-banners
-* buy premium (no adds, unlocks all game-modes (first only ghost is available), unlocks wearables and hints about  
++ buy premium (no adds, unlocks all game-modes (first only ghost is available), unlocks wearables and hints about  
 each game mode)
 
 ##See the mockup
@@ -100,7 +104,7 @@ thinking time and some creativity you can imagine that games are often not finis
 This way the user can quickly see if it's their turn and what the actual word is without actually needing to enter the  
 game. This is extremely handy and useful.
 
-**1.1 (on top)**
+**1.1 add game - transition-animation: on top of home screen**
 
 * players  
 - computers (on/off) (default is on)  
@@ -178,13 +182,14 @@ like it is random/not in his control.
 ##Frameworks, libraries and other technologies
 
 ###Frameworks used
-none of right now
+
+* SQLite
 
 ####Controllers
 none of right now
 
 ####Classes overview
-none of right now
+See the code
 
 ###Libraries used (APIs)
 none of right now

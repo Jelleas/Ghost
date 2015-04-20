@@ -1,24 +1,26 @@
-package nl.mprog.ghost;
+package nl.mprog.ghost.Activity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import nl.mprog.ghost.R;
 
-public class PremiumActivity extends ActionBarActivity {
+
+public class ShareActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_premium);
+        setContentView(R.layout.activity_share);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_premium, menu);
+        getMenuInflater().inflate(R.menu.menu_share, menu);
         return true;
     }
 

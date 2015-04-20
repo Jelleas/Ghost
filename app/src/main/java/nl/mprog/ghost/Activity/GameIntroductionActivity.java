@@ -1,24 +1,26 @@
-package nl.mprog.ghost;
+package nl.mprog.ghost.Activity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import nl.mprog.ghost.R;
 
-public class FeedbackActivity extends ActionBarActivity {
+
+public class GameIntroductionActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_feedback);
+        setContentView(R.layout.activity_game_introduction);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_feedback, menu);
+        getMenuInflater().inflate(R.menu.menu_game_introduction, menu);
         return true;
     }
 

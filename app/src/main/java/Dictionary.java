@@ -1,12 +1,14 @@
 import java.util.HashMap;
 import java.util.Map;
 
+import nl.mprog.ghost.RadixTree;
+
 /**
  * Created by Joop Pascha on 19-4-2015.
  */
 public class Dictionary {
     int validRemainingWordCount;
-    int search
+    RadixTree radixTree = new RadixTree();
 
     //TODO ask why does it take in words and not a stringBuffer?
     public Dictionary(String words) {
