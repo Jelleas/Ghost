@@ -1,6 +1,4 @@
-package nl.mprog.ghost;
-
-import java.io.Serializable;
+package nl.mprog.ghost.datastructure;
 
 /**
  * Created by Joop Pascha on 20-4-2015.

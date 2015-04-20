@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="nl.mprog.ghost" >
+    package="nl.mprog.ghost">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".Activity.MainActivity"
-            android:label="@string/app_name" >
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,49 +17,38 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.AchievementsActivity"
-            android:label="@string/title_activity_achievements" >
-        </activity>
+            android:name=".activity.AchievementsActivity"
+            android:label="@string/title_activity_achievements"></activity>
         <activity
-            android:name=".Activity.FeedbackActivity"
-            android:label="@string/title_activity_feedback" >
-        </activity>
+            android:name=".activity.FeedbackActivity"
+            android:label="@string/title_activity_feedback"></activity>
         <activity
-            android:name=".Activity.RulesActivity"
-            android:label="@string/title_activity_rules" >
-        </activity>
+            android:name=".activity.RulesActivity"
+            android:label="@string/title_activity_rules"></activity>
         <activity
-            android:name=".Activity.PremiumActivity"
-            android:label="@string/title_activity_premium" >
-        </activity>
+            android:name=".activity.PremiumActivity"
+            android:label="@string/title_activity_premium"></activity>
         <activity
-            android:name=".Activity.ShareActivity"
-            android:label="@string/title_activity_share" >
-        </activity>
+            android:name=".activity.ShareActivity"
+            android:label="@string/title_activity_share"></activity>
         <activity
-            android:name=".Activity.UserSettingsActivity"
-            android:label="@string/title_activity_user_settings" >
-        </activity>
+            android:name=".activity.UserSettingsActivity"
+            android:label="@string/title_activity_user_settings"></activity>
         <activity
-            android:name=".Activity.GameIntroductionActivity"
-            android:label="@string/title_activity_game_introduction" >
-        </activity>
+            android:name=".activity.GameIntroductionActivity"
+            android:label="@string/title_activity_game_introduction"></activity>
         <activity
-            android:name=".Activity.AccountCreationActivity"
-            android:label="@string/title_activity_account_creation" >
-        </activity>
+            android:name=".activity.AccountCreationActivity"
+            android:label="@string/title_activity_account_creation"></activity>
         <activity
-            android:name=".Activity.GameActivity"
-            android:label="@string/title_activity_game" >
-        </activity>
+            android:name=".activity.GameActivity"
+            android:label="@string/title_activity_game"></activity>
         <activity
-            android:name=".Activity.GamesHomeScreenActivity"
-            android:label="@string/title_activity_games_home_screen" >
-        </activity>
+            android:name=".activity.GamesHomeScreenActivity"
+            android:label="@string/title_activity_games_home_screen"></activity>
         <activity
-            android:name=".Activity.GameCreationActivity"
-            android:label="@string/title_activity_game_creation" >
-        </activity>
+            android:name=".activity.GameCreationActivity"
+            android:label="@string/title_activity_game_creation"></activity>
     </application>
 
 </manifest>

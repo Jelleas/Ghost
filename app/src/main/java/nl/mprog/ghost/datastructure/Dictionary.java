@@ -1,7 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
-
-import nl.mprog.ghost.RadixTree;
+package nl.mprog.ghost.datastructure;
 
 /**
  * Created by Joop Pascha on 19-4-2015.
