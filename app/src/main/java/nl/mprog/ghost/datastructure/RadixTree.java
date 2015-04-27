@@ -1,80 +1,67 @@
 package nl.mprog.ghost.datastructure;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import android.content.Context;
+
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Scanner;
 
+import nl.mprog.ghost.R;
 import nl.mprog.ghost.enumeration.Language;
 
 /**
  * Created by Joop Pascha on 20-4-2015.
  */
 public class RadixTree implements Serializable {
-    RadixTreeNode root;
-    String wordFile;
+    private RadixTreeNode mRoot = new RadixTreeNode();
+    private ArrayList<RadixTreeNode> mActiveNodes;
 
-    /**
-     * store the last visited nodes of each game
-     */
-    ArrayList<RadixTreeNode> activeNodes;
-    /**
-     * for each lastVisited node preloaded possible children for quick lookup.
-     */
-    ArrayList<RadixTreeNode[]> childrenOfActiveNodes;
-    String currentUnmatchedWord;
-
-    public RadixTree(Language language) {
-        setLanguage(language);
-        readWordsFromFileIntoRadixTree();
+    public RadixTree(Context context, Language language) {
+        readInWords(getFileScanner(context, language));
     }
 
+    public void readInWords(Scanner scanner) {
+        String word;
 
-    public void readWordsFromFileIntoRadixTree() {
-        String str;
-
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(wordFile));
-
-            while ((str = br.readLine()) != null) {
-                insert(str);
-            }
-
-            br.close();
-        } catch (IOException e) {
-            e.getMessage();
+        while (scanner.hasNextLine()) {
+            word = scanner.nextLine();
+            mRoot.insertWord(word, mRoot);
         }
+
+        scanner.close();
     }
 
-    public void stringParser() {
+    public Scanner getFileScanner(Context context, Language language) {
+        Scanner scanner;
 
-    }
-
-    public void insert(String str) {
-
-    }
-
-    public void writeObject() {
-
-    }
-
-    public void readObject() {
-
-    }
-
-    public void updateNode(String string) {
-
-    }
-
-    public void setLanguage(Language language) {
         switch (language) {
-            case ENGLISH:
-                wordFile = "main/res/dictionary/dutch";
-                break;
             case DUTCH:
-                wordFile = "main/res/dictionary/dutch";
+                scanner = new Scanner(context.getResources().openRawResource(R.raw.dutch));
                 break;
+            case ENGLISH:
+                scanner = new Scanner(context.getResources().openRawResource(R.raw.english));
+                break;
+            default:
+                scanner = new Scanner(context.getResources().openRawResource(R.raw.english));
+                break;
+        }
+
+        return scanner;
+    }
+
+    public boolean isWord(String word) {
+        RadixTreeNode activeNode = mRoot;
+        char[] chars = word.toCharArray();
+
+        for (int i = 0; i < chars.length; i++) {
+            activeNode = activeNode.findNode(activeNode, chars[i]);
+            if (activeNode == null) return false;
+        }
+
+        if (activeNode.mIsWordEnd) {
+            return true;
+        } else {
+            return false;
         }
     }
 }

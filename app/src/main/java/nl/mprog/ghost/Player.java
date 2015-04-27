@@ -10,9 +10,11 @@ public class Player {
     String[] defaultGhostNames = {"Casper McFadden", "Slimer", "Boo Berry", "Beetlejuice", "Inky",
             "Blinky", "Clyde", "Pinky", "Funny Phantom", "King Hamlet", "Ghost Rider",
             "The Phantom", "The Flying Dutchman", "Bloody Mary", "Slimer", "Space Ghost"};
+    boolean isActive;
 
     public Player() {
         name = defaultGhostNames[randInt(defaultGhostNames.length)];
+        isActive = true;
     }
 
     public Player(String playerName) {
